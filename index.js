@@ -3,8 +3,8 @@ const functions = require("firebase-functions");
 const app = dialogflow({ debug: true });
 const fetch = require("node-fetch");
 
-app.intent("Star Wars Info", (conv, { movieTitle }) => {
-  getMovieMatch().then(movieMatch => {
+app.intent("Star Wars Info", async (conv, { movieTitle }) => {
+  await getMovieMatch(movieTitle).then(movieMatch => {
     if (movieMatch.length) {
       conv.close(movieMatch[0].opening_crawl);
     } else {
