@@ -1,12 +1,8 @@
 {
   "name": "starwarschatbot",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
+  "description": "Dialogflow fullfilment for a Star Wars chatbot using swapi.co API.",
+  "author": "Quinn McPhail <quinnmcphail@me.com> (http://quinnmcphail.com)",
   "license": "ISC",
   "dependencies": {
     "actions-on-google": "^2.6.0",
